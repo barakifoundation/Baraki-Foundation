@@ -170,17 +170,7 @@ AOS.init({ duration: 800, once: true });
                 }, 2000);
             });
         }
-        window.onload = () => {
-            const loader = document.getElementById('loader');
-            if (loader) {
-                setTimeout(() => {
-                    loader.style.opacity = '0';
-                    setTimeout(() => loader.style.display = 'none', 500);
-                }, 500);
-            }
-            startLoopSlider('event-slider', 5000, 310);
-            startLoopSlider('member-slider', 4000, 260);
-        }
+ 
                // Search Members Functionality
             function searchMembers() {
                 // Search input field theke value neya
@@ -212,3 +202,16 @@ AOS.init({ duration: 800, once: true });
                     if(noResults) noResults.classList.add('hidden');
                 }
 };
+
+
+       window.onload = () => {
+            const loader = document.getElementById('loader');
+            if (loader) {
+                setTimeout(() => {
+                    loader.style.opacity = '0';
+                    setTimeout(() => loader.style.display = 'none', 500);
+                }, 500);
+            }
+            startLoopSlider('event-slider', 5000, 310);
+            startLoopSlider('member-slider', 4000, 260);
+        }
